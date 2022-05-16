@@ -1,2 +1,3 @@
 # Ladybird_Game
-Small game to practise my python coding :)
+Small game to practice my python coding :)
+
