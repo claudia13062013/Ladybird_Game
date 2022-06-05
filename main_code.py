@@ -54,9 +54,13 @@ class Player:
     def born(self):
         screen.blit(self.picture, (self.x, self.y))
     def moving_y(self, m1):
+        if self.y >= height - 5 or self.y <= 5:
+            m1 *= -1
         self.y += m1
         self.seen = pygame.Rect(self.x, self.y, self.wi, self.he)
     def moving_x(self, m2):
+        if self.x >= width - 5 or self.x <= 5:
+            m2 *= -1
         self.x += m2
         self.seen = pygame.Rect(self.x, self.y, self.wi, self.he)
 
